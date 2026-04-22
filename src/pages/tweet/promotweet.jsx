@@ -518,7 +518,7 @@ const TweetHome = () => {
             className={`rounded-lg md:rounded-[20px] p-4 mb-4 bg-white dark:bg-DARKBG grid md:grid-cols-2 grid-cols-1 gap-x-10 md:gap-x-5 md:gap-y-10 gap-y-5 pb-4`}
           >
             {isLoading && <TweetSkeleton posts={8} />}
-            {data?.data?.data.map((tweet, index) => (
+            {data?.data?.data?.map((tweet, index) => (
               <TweetDisplay
                 tweet={tweet}
                 other_tweet_images={data?.data?.other_images}

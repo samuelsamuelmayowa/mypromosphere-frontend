@@ -90,7 +90,7 @@ const Search = ({ modal, searchResults, removeModal }) => {
                         },
                     }} className={`search-display bg-white dark:bg-darkBg py-4 px-4 rounded-md`}>
 
-                        {searchResults?.data.map((item) => (
+                        {searchResults?.data?.map((item) => (
                             <SplideSlide key={item.id}>
                                 <motion.div variants={childVariant} key={item.id} className="flex flex-col gap-2 md:gap-4">
                                     <div>

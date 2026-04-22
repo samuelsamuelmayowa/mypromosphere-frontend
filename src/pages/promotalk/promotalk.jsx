@@ -377,7 +377,7 @@ const Promotalk = () => {
             </h2>
             <div className="my-3 grid md:grid-cols-1 grid-cols-2 md:gap-4 gap-2">
               {isLoading && <TalkSkeleton posts={4} />}
-              {data?.data?.data.map((talks, index) => (
+              {data?.data?.data?.map((talks, index) => (
                 <TalkDisplay talks={talks} key={index} />
               ))}
               {Category !== "All" && !data?.data?.data.length && !isLoading && (

@@ -11,7 +11,6 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { toast } from "sonner";
-import AnimatedDivs from "./animatedDiv";
 import Loader from "../../loader";
 import { Helmet } from "react-helmet";
 import LOGIN from '../../assets/audio/login.mp3'
@@ -302,7 +301,7 @@ const Admin = () => {
             </button>
           </div>
         </div>
-        <AnimatedDivs />
+        {/* <AnimatedDivs /> */}
       </section>
     </section>
   );

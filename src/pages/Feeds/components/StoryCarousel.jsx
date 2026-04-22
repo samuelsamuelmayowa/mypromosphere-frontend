@@ -175,7 +175,7 @@ const VideoCarousel = () => {
 
         <div className="absolute inset-x-0 bottom-10 flex justify-center z-10">
           <div className="flex gap-1">
-            {videos.map((_, index) => (
+            {videos?.map((_, index) => (
               <div
                 key={index}
                 className={`h-1 rounded-full transition-all duration-300 ${index === activeIndex ? "w-6 bg-blue" : "w-2 bg-white"

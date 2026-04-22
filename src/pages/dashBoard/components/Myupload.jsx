@@ -46,7 +46,7 @@ const Myuploads = () => {
         {isLoading && <UploadSkeleton posts={8} />}
         {data?.data.posts &&
           !isLoading &&
-          data?.data.posts.map((item, index) => (
+          data?.data?.posts?.map((item, index) => (
             <div key={index} className="">
               <div className="overflow-hidden group relative after:absolute after:duration-300 after:inset-0 after:bg-black after:bg-opacity-40 after:opacity-0 hover:after:opacity-100">
                 {item.titleImageurl ? (

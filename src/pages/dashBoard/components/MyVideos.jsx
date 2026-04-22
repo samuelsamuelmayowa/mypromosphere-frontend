@@ -22,7 +22,7 @@ const MyVidoes = () => {
       {(isLoading) && (
         <VideoSkeleton posts={4} />
       )}
-      {(data?.data.posts && !isLoading) && data?.data.posts.map((video) => (
+      {(data?.data.posts && !isLoading) && data?.data?.posts?.map((video) => (
         <div key={video.id} className="flex flex-col gap-2">
           <div className="w-full aspect-ratio-box rounded-lg overflow-hidden">
             <ReactPlayer
