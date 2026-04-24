@@ -287,7 +287,7 @@ const Promotalk = () => {
                                   onChange={handleChange}
                                   value={values.talk}
                                   onBlur={handleBlur}
-                                  placeholder="What's the buzz?"
+                                  placeholder="Ask a question or share your experience (e.g. “How to start POS business in Lagos?”"
                                   className="jost text-base resize-none md:text-xl placeholder:md:text-xl focus:outline-none w-full h-[150px] p-4 bg-transparent border-none"
                                   name="talk"
                                   id="talk"
