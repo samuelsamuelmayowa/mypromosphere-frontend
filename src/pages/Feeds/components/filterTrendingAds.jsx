@@ -4,11 +4,9 @@ import { FaTableCells } from "react-icons/fa6";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Categories } from '../../../json/categories';
-import { useStateContext } from '../../../contexts/ContextProvider';
 import PropTypes from 'prop-types';
 
 const FilterTrendingAds = ({ adsCategory, setSearchParams, gridOrFlex, setGridOrFlex }) => {
-    const { darkMode } = useStateContext();
     const handleCategories = (category) => {
         if (category !== "All") {
             setSearchParams({ adsCategory: category });
@@ -57,16 +55,16 @@ const FilterTrendingAds = ({ adsCategory, setSearchParams, gridOrFlex, setGridOr
                         }}
                         >
                             <SplideSlide>
-                                <motion.div whileTap={{ scale: 0.95 }} onClick={() => handleCategories("All")} className={adsCategory === "All" ? `text-white dark:text-white bg-lightblue dark:bg-lightblue rounded-md` : `text-darkblue ${darkMode ? "dark:bg-DARKBG bg-DARKBG text-offwhite" : "bg-white dark:bg-white"} rounded-md cursor-pointer`}>
-                                    <div className="py-2 px-3 text-xs font-semibold jost">
+                                <motion.div whileTap={{ scale: 0.95 }} onClick={() => handleCategories("All")} className={adsCategory === "All" ? `text-white dark:text-white bg-lightblue dark:bg-lightblue rounded-full` : `hover:bg-lightblue bg-slate-100 text-slate-600 hover:text-white rounded-full`}>
+                                    <div className="px-5 py-1.5 font-label-sm whitespace-nowrap jost">
                                         All
                                     </div>
                                 </motion.div>
                             </SplideSlide>
                             {Categories?.map((item, index) => (
                                 <SplideSlide key={`${item.id}-${index}`}>
-                                    <motion.div whileTap={{ scale: 0.95 }} onClick={() => handleCategories(item.name)} className={adsCategory === item.name ? `text-white dark:text-white bg-lightblue dark:bg-lightblue rounded-md` : `text-darkblue ${darkMode ? "dark:bg-DARKBG bg-DARKBG text-offwhite" : "bg-white dark:bg-white"} rounded-md cursor-pointer`}>
-                                        <div className="py-2 px-3 text-xs font-semibold jost">
+                                    <motion.div whileTap={{ scale: 0.95 }} onClick={() => handleCategories(item.name)} className={adsCategory === item.name ? `text-white dark:text-white bg-lightblue dark:bg-lightblue rounded-full` : `hover:bg-lightblue bg-slate-100 text-slate-600 hover:text-white rounded-full`}>
+                                        <div className="px-5 py-1.5 font-label-sm whitespace-nowrapjost">
                                             {item.name}
                                         </div>
                                     </motion.div>

@@ -163,7 +163,7 @@ const Promotalk = () => {
           <Loader />
         </div>
       )}
-      <div className="md:px-6 px-2">
+      <div className="md:px-6 px-2 py-6">
         <GoogleAd />
         <Helmet>
           <title>

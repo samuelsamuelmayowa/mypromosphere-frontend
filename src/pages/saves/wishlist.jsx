@@ -15,8 +15,8 @@ const Wishlist = () => {
 
     if (error) return <div className='min-h-screen grid place-items-center text-red md:text-xl text-lg'><p>{error?.message}</p></div>
     return (
-        <div className="min-h-screen md:px-6 px-2 w-full">
-            <p className="text-sm">Find your saved items and get Ready to buy them</p>
+        <div className="min-h-screen md:px-6 px-2 py-6 w-full">
+            <p className="text-sm md:text-2xl">Find your saved items and get Ready to buy them</p>
             {(!wishList.length && !isLoading) && 
                 <div className="text-center">
                     <h1 className={`text-center mt-4 text-darkblue dark:text-mainTextDark`}>No item in your wishlist</h1>
