@@ -100,8 +100,7 @@ function MobileNav() {
                 flexDirection: "column",
                 alignItems: "center",
                 gap: 4,
-              }}
-            >
+              }}>
               <div
                 style={{
                   width: 44,
