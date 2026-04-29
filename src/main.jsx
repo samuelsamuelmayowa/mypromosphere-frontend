@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 // import "./index.css";
 import { ContextProvider } from "./contexts/ContextProvider";
 import { AddToWishListProvider } from "./contexts/addToWishListContextProvider";
@@ -9,6 +9,7 @@ import { SaveTweetAndTalkProvider } from "./contexts/saveTalkAndTweetContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import GoogleTag from "./Google";
 import AppRouter from "./App";
+import { Analytics } from "@vercel/analytics/next"
 import GoogleAd from "./Goggs/GoogleAd";
 const queryClient = new QueryClient();
 
